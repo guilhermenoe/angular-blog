@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container__title{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+p {
+    background-color: transparent;
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container__background{
+    width: 50%;
+    min-width: 50%;
+    height: 100vh;
+    background: url('https://img.wattpad.com/f2ea9d171a4ca9e53a0de6c9cb9d9b932f34fcf3/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6f5f2d5a4659356d4f7232716e513d3d2d3438342e313537626566656336306230336663363332333031393234343836332e6a7067?s=fit&w=720&h=720');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) { 
+    .container {
+        flex-direction: column; 
+    }
+
+    .container__title {
+        padding: 0 2rem; 
+        width: 100%; 
+        min-width: auto; 
+        height: auto; 
+        margin-top: 50%;
+    }
+
+    .container__background {
+        display: none; 
+    }
+}
+
+@media (max-width: 600px) { 
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

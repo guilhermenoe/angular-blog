@@ -1,0 +1,33 @@
+.container__menu-title {
+    color: white;
+}
+
+.container__menu-title > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    font-family: 'segoi UI';
+    display: flex;
+    justify-content: center;
+}
+
+.container__menu-title > hr {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-color: #0802fb;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container__menu-title > h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container__menu-title > h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="container__small-card">
+  <div class="container__small-card-content">
+    <div class="small-card__photo">
+      <a [routerLink]="['/content', id]">
+        <img src="{{ photoAnime }}" alt="" srcset="" height="200px" />
+      </a>
+    </div>
+    <div class="small-card__title">
+      <h2>
+        <a [routerLink]="['/content', id]">{{ titleAnime }}</a>
+      </h2>
+      <div class="small-card__more">
+        <p>Veja tudas as novidades sobre {{ titleAnime }}, e saiba o que está por vir nessa proxima fase da obra.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container__small-card-separator">
+    <hr />
+  </div>
+</div>

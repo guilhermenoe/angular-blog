@@ -1,0 +1,74 @@
+.container__small-card {
+    width: 700px;
+    margin-bottom: 15px;
+}
+
+.container__small-card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.small-card__photo > img {
+    width: 350px;
+    min-width: 200px;
+    margin-right: 20px;
+}
+
+.small-card__photo > a {
+    margin-right: 20px;
+}
+
+.small-card__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.small-card__title > h2 {
+    font-size: 20px;
+}
+
+.small-card__more > p {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: gray;
+    font-size: 16px;
+}
+
+.container__small-card-separator {
+    margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .container__small-card {
+        width: 90%; /* Reduz a largura para telas menores */
+        max-width: 90%; /* Reduz a largura máxima */
+        margin: 0 auto 15px; /* Centraliza e adiciona margem inferior */
+    }
+
+    .container__small-card-content {
+        flex-direction: column; /* Altera para coluna para telas menores */
+    }
+
+    .small-card__photo > img {
+        width: 100%; /* Define a largura da imagem para ocupar toda a largura do contêiner */
+        min-width: auto; /* Remove a largura mínima */
+        margin-right: 0; /* Remove a margem direita */
+        margin-bottom: 15px; /* Adiciona margem inferior entre a imagem e o título */
+    }
+}
+
+@media (max-width: 600px) {
+    .small-card__title > h2 {
+        font-size: 16px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+
+    .small-card__more > p {
+        font-size: 14px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
+}
